@@ -1,0 +1,302 @@
+/* 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  box-sizing: border-box;
+}
+
+.home-container {
+  position: relative;
+  height: 100vh; 
+  overflow: hidden; 
+  margin-top: 0; 
+}
+
+.bg-pattern {
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-main {
+  position: absolute;
+  z-index: -1;
+  width: 600px;
+  right: 0;
+  top: -110px;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%; 
+}
+
+
+.hero-section {
+  height: 100%; 
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #888;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  margin-top: 1rem;
+}
+
+.predictor-btn {
+  background-color: #1e293b;
+  color: white;
+  padding: 0.625rem 1.75rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+}
+
+.how-it-works-link {
+  margin-left: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+}
+
+.hero-image-container {
+  text-align: right;
+  padding-left: 2rem;
+  padding-right: 1.5rem;
+  margin-top: 0;
+}
+
+
+.hero-image {
+  transform: scale(1.2); 
+  margin-left: -20px;
+  max-width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+} */
+
+/* Reset and base styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Main container */
+.home-container {
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  background-image: url('../assets/Background.png');      /* Use the correct relative path */
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 520px auto;                         /* Adjust as needed */
+  background-attachment: fixed;                        /* Keeps it fixed on scroll */
+}
+
+/* Fixed pattern image on the right */
+.bg-pattern {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 520px;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+/* Optional: Additional background image (if needed) */
+.bg-main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 520px;
+  max-width: 45vw;
+  height: auto;
+  z-index: -1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Content centering */
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero section */
+.hero-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Grid layout for hero content */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+/* Hero text styles */
+.hero-text {
+  padding-left: 2vw;
+}
+
+.hero-text h2 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #888;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.hero-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.predictor-btn {
+  background-color: #1e293b;
+  color: white;
+  padding: 0.7rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  transition: background 0.2s;
+}
+
+.predictor-btn:hover {
+  background: #334155;
+}
+
+.how-it-works-link {
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+}
+
+.how-it-works-link:hover {
+  background: #f1f5f9;
+}
+
+/* Hero image styles */
+.hero-image-container {
+  text-align: right;
+  padding-right: 2vw;
+}
+
+.hero-image {
+  width: 550px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+  .bg-pattern {
+    width: 220px;
+  }
+  .bg-main {
+    width: 220px;
+    max-width: 50vw;
+  }
+  .hero-image {
+    width: 250px;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .hero-image-container {
+    text-align: center;
+    padding-right: 0;
+    margin-top: 2rem;
+  }
+  .hero-text {
+    padding-left: 0;
+    text-align: center;
+  }
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-wrapper {
+    padding: 0 0.5rem;
+  }
+  .hero-section {
+    padding: 0;
+  }
+  .hero-image {
+    width: 160px;
+  }
+}
