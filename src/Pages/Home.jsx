@@ -41,7 +41,6 @@
 import React from 'react'
 import Img from '../assets/hero-img1.png'
 import { Link } from 'react-router-dom'
-import bg from '../assets/Background.png'
 import Navbar from '../Components/Navbar'
 import './Home.css'
 
