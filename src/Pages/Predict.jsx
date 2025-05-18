@@ -74,7 +74,7 @@ export default function Predict() {
     const symptoms = symptomsList.map(s => s.value);
   
     try {
-      const response = await fetch('https://flask-backend-krq3.onrender.com', {
+      const response = await fetch('https://flask-backend-krq3.onrender.com/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
