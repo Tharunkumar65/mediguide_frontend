@@ -129,7 +129,7 @@ if (result && result.diet && typeof result.diet[0] === "string") {
         <Navbar />
 
       <div className="header-section">
-        <h1>Symptom Predictor</h1>
+        <h1>Disease Predictor</h1>
         <p>
           Welcome to our Symptom Input Page - your first step towards personalized healthcare. Here, you have the opportunity to share your symptoms, allowing us to provide you with accurate and tailored medical advice.
         </p>

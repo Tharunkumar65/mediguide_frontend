@@ -1,196 +1,35 @@
 html, body, #root {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100vw;
-    overflow-x: hidden;
-    background: #fff;
-  }
-  
-  .hiw-bg-container {
-    min-height: 100vh;
-    width: 100vw;
-    position: relative;
-    overflow-x: hidden;
-    background:
-      url('../assets/Pattern.png') left top / cover no-repeat,
-      url('../assets/Background.png') right top / 600px auto no-repeat,
-      #fff;
-  }
-  
-  @media (max-width: 900px) {
-    .hiw-bg-container {
-      background:
-        url('../assets/Pattern.png') left top / cover no-repeat,
-        url('../assets/Background.png') right top / 400px auto no-repeat,
-        #fff;
-    }
-  }
-  @media (max-width: 600px) {
-    .hiw-bg-container {
-      background:
-        url('../assets/Pattern.png') left top / cover no-repeat,
-        url('../assets/Background.png') right top / 220px auto no-repeat,
-        #fff;
-    }
-  }
-  
-  .hiw-content-container {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    z-index: 1;
-    padding: 2rem 1rem 0 1rem;
-  }
-  
-  .hiw-section {
-    width: 100%;
-  }
-  
-  .hiw-section-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: center;
-    margin: 2rem 0;
-  }
-  .hiw-section-top {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-  .hiw-section-imgtext {
-    margin: 3rem 0;
-  }
-  @media (max-width: 900px) {
-    .hiw-section-grid {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-  }
-  
-  .hiw-heading {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 18px;
-    margin-top: 0;
-    text-align: center;
-    letter-spacing: 0.5px;
-  }
-  .hiw-heading-side {
-    text-align: left;
-    font-size: 2rem;
-    margin: 0 0 1rem 0;
-  }
-  @media (max-width: 900px) {
-    .hiw-heading-side {
-      text-align: center;
-    }
-  }
-  
-  .hiw-subheading {
-    color: #444;
-    font-size: 1.13rem;
-    max-width: 800px;
-    margin: 0 auto 1.5rem auto;
-    line-height: 1.7;
-    font-weight: 400;
-    text-align: center;
-  }
-  
-  .hiw-btn-row {
-    margin: 2rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-  .hiw-btn {
-    border-radius: 6px;
-    background: #1e293b;
-    color: #fff;
-    padding: 0.7rem 2rem;
-    font-weight: 600;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    transition: background 0.2s;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .hiw-btn:hover {
-    background: #334155;
-  }
-  .hiw-btn-outline {
-    background: transparent;
-    color: #1e293b;
-    border: 2px solid #1e293b;
-  }
-  .hiw-btn-outline:hover {
-    background: #e2e8f0;
-  }
-  
-  .hiw-img-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .hiw-main-img {
-    width: 320px;
-    max-width: 90vw;
-    height: auto;
-    object-fit: contain;
-  }
-  @media (max-width: 600px) {
-    .hiw-main-img {
-      width: 180px;
-    }
-  }
-  
-  .hiw-center-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-  }
-  .hiw-title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #222;
-    text-align: center;
-  }
-  .hiw-desc {
-    color: #444;
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.7;
-    font-weight: 400;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .hiw-card {
-    border: 1px solid #3b82f6;
-    border-radius: 12px;
-    background: #f8fafc;
-    padding: 2rem;
-    margin: 1rem 0;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-    text-align: center;
-  }
-  .hiw-card-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 1rem 0 0.5rem 0;
-    color: #1e293b;
-  }
-  .hiw-card-text {
-    color: #4a5568;
-    font-size: 1rem;
-    margin: 0;
-    text-align: left;
-  }
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+.how-it-works-outer {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0;
+ 
+}
+
+.how-it-works-container{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.how-it-works-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.how-it-works-container p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
